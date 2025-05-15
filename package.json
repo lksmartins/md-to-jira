@@ -11,6 +11,7 @@
     "type": "git",
     "url": "https://github.com/lksmartins/md-to-jira"
   },
+  "license": "MIT",
   "categories": [
     "Other"
   ],
