@@ -2,7 +2,7 @@
   "name": "markdown-to-jira",
   "displayName": "Markdown to Jira",
   "description": "Convert Markdown to Jira comments format",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "publisher": "lucas-machado",
   "engines": {
     "vscode": "^1.69.0"
