@@ -1,6 +1,6 @@
 {
   "name": "markdown-to-jira",
-  "displayName": "Markdown to Jira",
+  "displayName": "Markdown to Jira by Lucas Machado",
   "description": "Convert Markdown to Jira comments format",
   "version": "1.0.1",
   "publisher": "lucas-machado",
