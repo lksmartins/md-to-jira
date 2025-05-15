@@ -1,0 +1,56 @@
+{
+  "name": "markdown-to-jira",
+  "displayName": "Markdown to Jira",
+  "description": "Convert Markdown to Jira comments format",
+  "version": "1.0.0",
+  "publisher": "lucas-machado",
+  "engines": {
+    "vscode": "^1.69.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lksmartins/markdown-to-jira"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onLanguage:markdown"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "markdownToJira.convert",
+        "title": "markdownToJira",
+        "category": "Markdown",
+        "icon": {
+          "light": "resources/jira-dark.svg",
+          "dark": "resources/jira-light.svg"
+        }
+      }
+    ],
+    "menus": {
+      "editor/title": [
+        {
+          "command": "markdownToJira.convert",
+          "when": "resourceLangId == markdown",
+          "group": "navigation"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "node ./node_modules/typescript/bin/tsc -p ./",
+    "package": "vsce package",
+    "publish": "vsce publish"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.10",
+    "@types/node": "^22.15.18",
+    "@types/vscode": "^1.69.0",
+    "typescript": "^4.9.5",
+    "vsce": "^2.12.0"
+  }
+}
